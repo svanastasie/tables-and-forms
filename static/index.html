@@ -1,72 +1,72 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <title>Форма выбора питомца</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main>
-      <h1>Найди себе друга!</h1>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<main>
+    <h1>Найди себе друга!</h1>
 
-      <form action="/pets/orders" method="POST">
+    <form action="/pets/orders" method="POST">
         <lable>
-          Выберите тип питомца:
-          <select>
-            <option value="cat">Кошка</option>
-            <option value="dog">Собака</option>
-            <option value="rodent">Грызун</option>
-            <option value="bird">Птица</option>
-            <option value="reptile">Рептилия</option>
-          </select>
+            Выберите тип питомца:
+            <select>
+                <option value="cat">Кошка</option>
+                <option value="dog">Собака</option>
+                <option value="rodent">Грызун</option>
+                <option value="bird">Птица</option>
+                <option value="reptile">Рептилия</option>
+            </select>
         </lable>
 
         <label>
-          <input type="radio" name="gender" value="male" />
-          Мужской пол
+            <input type="radio" name="gender" value="male"/>
+            Мужской пол
         </label>
         <label>
-          <input type="radio" name="gender" value="female" />
-          Женский пол
+            <input type="radio" name="gender" value="female"/>
+            Женский пол
         </label>
 
         <lable>
-          Цвет глаз:
-          <input type="color" name="eyeColor" />
+            Цвет глаз:
+            <input type="color" name="eyeColor"/>
         </lable>
 
         <label>
-          Длина хвоста:
-          <input type="number" name="tailLength" min="0" />
+            Длина хвоста:
+            <input type="number" name="tailLength" min="0"/>
         </label>
 
         <label>
-          Введите имя питомца:
-          <input type="text" name="pet_name" required />
+            Введите имя питомца:
+            <input type="text" name="pet_name" required/>
         </label>
 
         <label>
-          Дата рождения:
-          <input type="date" name="birthday" />
+            Дата рождения:
+            <input type="date" name="birthday"/>
         </label>
 
         <label>
-          Ваш email:
-          <input type="email" name="email" required />
+            Ваш email:
+            <input type="email" name="email" required/>
         </label>
 
         <label>
-          Ваш телефон:
-          <input type="tel" name="phone" />
+            Ваш телефон:
+            <input type="tel" name="phone"/>
         </label>
 
         <label>
-          Правила:
-          <textarea name="rules" rows="4" cols="50"></textarea>
+            Правила:
+            <textarea name="rules" rows="4" cols="50"></textarea>
         </label>
 
         <button type="reset">Сбросить все</button>
-      </form>
-    </main>
-  </body>
+    </form>
+</main>
+</body>
 </html>
