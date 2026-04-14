@@ -10,24 +10,28 @@
     <h1>Найди себе друга!</h1>
 
     <form action="/pets/orders" method="POST">
-        <lable>
+        <label>
             Выберите тип питомца:
-            <select>
+            <select name="petType">
                 <option value="cat">Кошка</option>
                 <option value="dog">Собака</option>
                 <option value="rodent">Грызун</option>
                 <option value="bird">Птица</option>
                 <option value="reptile">Рептилия</option>
             </select>
-        </lable>
+        </label>
 
         <label>
-            <input type="radio" name="gender" value="male"/>
+            <input type="radio" name="gender" value="boy"/>
             Мужской пол
         </label>
         <label>
-            <input type="radio" name="gender" value="female"/>
+            <input type="radio" name="gender" value="girl"/>
             Женский пол
+        </label>
+        <label>
+            <input type="radio" name="gender" value="none"/>
+            Не определен
         </label>
 
         <lable>
@@ -37,35 +41,35 @@
 
         <label>
             Длина хвоста:
-            <input type="number" name="tailLength" min="0"/>
+            <input type="number" name="tailLength" min="7" max="120" placeholder="7"/>
         </label>
 
         <label>
             Введите имя питомца:
-            <input type="text" name="pet_name" required/>
+            <input type="text" name="name" required placeholder="Имя"/>
         </label>
 
         <label>
             Дата рождения:
-            <input type="date" name="birthday"/>
+            <input type="date" name="dateOfBirth"/>
         </label>
 
         <label>
             Ваш email:
-            <input type="email" name="email" required/>
+            <input type="email" name="email" required placeholder="123@mail.ru"/>
         </label>
 
         <label>
             Ваш телефон:
-            <input type="tel" name="phone"/>
+            <input type="tel" name="phone" placeholder="+7123456789"/>
         </label>
 
         <label>
-            Правила:
-            <textarea name="rules" rows="4" cols="50"></textarea>
+            <input type="checkbox" name="rules" value="true" required>Я согласен с правилами
         </label>
 
         <button type="reset">Сбросить все</button>
+        <button type="submit">Отправить</button>
     </form>
 </main>
 </body>

@@ -29,3 +29,19 @@ h1 {
 .orders {
     margin: 20px 0;
 }
+
+form > * {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input:not([type="radio"]),
+form select,
+form textarea {
+    display: block;
+    margin-top: 6px;
+}
+
+form button {
+    margin-top: 8px;
+}
